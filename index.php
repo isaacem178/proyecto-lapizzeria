@@ -1,13 +1,5 @@
+<?php get_header(); ?>
 
-<!DOCTYPE html>
-<html lang="">
-	<head>
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>La Pizzeria</title>
-	  <?php wp_head(); ?>
-	</head>
-	<body>
-	</body>
-</html>
+<h1>Hola desde index.php</h1>
 
+<?php get_footer(); ?>
