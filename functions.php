@@ -12,3 +12,12 @@ function lapizzeria_styles(){
 
 add_action('wp_enqueue_scripts', 'lapizzeria_styles');
 
+// Creacion de menus
+function lapizzeria_menus(){
+    register_nav_menus(array(
+        'header-menu' => __('Header Menu', 'lapizzeria'),
+        'social-menu' => __('Social Menu', 'lapizzeria')
+    ));
+}
+
+add_action('init', 'lapizzeria_menus');
