@@ -12,13 +12,13 @@
             <div class="contenedor">
                 <div class="logo">
                     <a href="<?php echo esc_url (home_url('/') ); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="" class="logotipo">
                     </a>
                 </div> <!-- .logo-->
             </div><!-- .contenedor -->
         </header>
 
-        <div class="informacion-encabezado">
+        <div class="contenedor informacion-encabezado">
             <div class="redes-sociales">
                 <?php 
                 $args = array(

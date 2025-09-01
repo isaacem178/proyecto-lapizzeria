@@ -10,3 +10,42 @@ Tags: restaurant, mobile first, responsive, pizza
 Text Domanin: lapizzeria
 */
 
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/** ENCABEZADO SITIO  **/
+
+header.encabezado-sitio {
+    border-bottom: 1px solid #c1c1c1;
+}
+
+div.logo {
+    text-align: center;
+}
+
+img.logotipo {
+    width: 250px;
+}
+
+@media only screen and (min-width:768px){
+    div.logo {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width:996px){
+    div.logo {
+        text-align: center;
+    }
+}
