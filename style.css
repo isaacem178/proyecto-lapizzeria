@@ -28,6 +28,7 @@ html{
 
 header.encabezado-sitio {
     border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 30px;
 }
 
 div.logo {
@@ -66,6 +67,23 @@ img.logotipo {
     }
 }
 
+div.direccion {
+    display: block;
+    clear: both;
+    padding-top: 10px;
+}
+
+div.direccion p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media only screen and (min-width:768px){
+    div.direccion p{
+        text-align: right;
+    }
+}
 /** MENU REDES SOCIALES **/
 
 
@@ -76,7 +94,7 @@ nav.sociales ul {
 }
 
 @media only screen and (min-width:768px){
-    
+   
     nav.sociales ul {
         float: right;
     } 
@@ -115,4 +133,8 @@ nav.sociales ul li a[href*="twitter.com"]::before {
 
 nav.sociales ul li a[href*="youtube.com"]::before {
     content: '\f167';
+}
+
+nav.sociales ul li a[href*="instagram.com"]::before {
+    content: '\f16d';
 }
