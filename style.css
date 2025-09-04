@@ -49,3 +49,70 @@ img.logotipo {
         text-align: center;
     }
 }
+
+@media only screen and (min-width:768px){
+    header.encabezado-sitio .contenedor {
+        position: relative;
+    }
+
+    .informacion-encabezado{ 
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    div.direecion p {
+        text-align: right;
+    }
+}
+
+/** MENU REDES SOCIALES **/
+
+
+nav.sociales ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+@media only screen and (min-width:768px){
+    
+    nav.sociales ul {
+        float: right;
+    } 
+}
+
+.sr-text {
+    display: none;
+}
+
+nav.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav.sociales ul li a:before {
+    font-family: "Font Awesome 7 Brands";
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    content: '\f09a';
+    font-size: 30px;
+    color: #000000;
+}
+
+nav.sociales ul li a[href*="facebook.com"]::before {
+    content: '\f09a';
+}
+
+nav.sociales ul li a[href*="pinterest.com"]::before {
+    content: '\f0d2';
+}
+
+nav.sociales ul li a[href*="twitter.com"]::before {
+    content: '\e61b';
+}
+
+nav.sociales ul li a[href*="youtube.com"]::before {
+    content: '\f167';
+}
