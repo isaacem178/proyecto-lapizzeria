@@ -43,7 +43,7 @@
         
         <div class="menu-principal">
             <div class="mobile-menu">
-                <a class="mobile" href="#">Menú <i class="fa-solid fa-bars"></i></a>
+                <a class="mobile" href="#"><i class="fa-solid fa-bars"></i>Menú</a>
             </div>
 
             <div class="contenedor navegacion">
