@@ -40,9 +40,12 @@
 
             </div><!-- .contenedor -->
         </header>
+        
+        <div class="menu-principal">
+            <div class="mobile-menu">
+                <a class="mobile" href="#">Menú <i class="fa-solid fa-bars"></i></a>
+            </div>
 
-
-        <nav class="menu-sitio">
             <div class="contenedor navegacion">
                 <?php 
                 $args = array(
@@ -54,4 +57,7 @@
                     wp_nav_menu($args);
                 ?>
             </div>
-        </nav>
+        </div>
+
+        <!-- <nav class="menu-sitio"> -->
+        <!-- </nav> -->
