@@ -10,6 +10,7 @@
                     <p>8179 Bay Avenue Mountain View, CA 94043</p>
                     <p>Teléfono: +1-92-456-7890</p>
                 </div>
+                <p class="copyright">Copyright (c) <?php echo date('Y'); ?> Author. All Rights Reserved.</p>
             </footer>
         <?php wp_footer(); ?>
   </body>
