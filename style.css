@@ -44,6 +44,12 @@ h4 {
     font-size: 24px;
 }
 
+.clear,
+.clear::after{
+    content: '';
+    clear: both;
+    display: block;
+}
 .texto-centrado {
     text-align: center;
 }
@@ -349,3 +355,62 @@ footer p.copyright {
     margin-top: 20px;
 }
 
+/* NOSOTROS */
+div.informacion-cajas > div {
+    text-align: center;
+    color: #ffffff;
+}
+
+div.informacion-cajas > div img{
+    width: 100%;
+}
+
+@media only screen and (min-width:400px){
+
+    div.informacion-cajas > div {
+        width: 50%; 
+        float: left;
+    }
+    div.informacion-cajas > div:last-child {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width:768px){
+
+    div.informacion-cajas > div,
+    div.informacion-cajas > div:last-child{
+        width: 33.3%;
+    }
+}
+
+div.informacion-cajas > div:nth-child(1){
+    background-color: #f19f30;
+}
+
+div.informacion-cajas > div:nth-child(2){
+    background-color: #127426;
+}
+
+div.informacion-cajas > div:nth-child(3){
+    background-color: #a61206;
+}
+
+div.contenido-caja {
+    padding: 20px 5px 5px 5px;
+}
+
+@media only screen and (min-width:992px){
+    div.contenido-caja {
+        padding: 50px 0;
+    }
+
+
+}
+
+div.contenido-caja h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+}

@@ -20,7 +20,7 @@
             <?php the_content(); ?>
         </main>
     </div>
-        <div class="informacion-cajas contenedor">
+        <div class="informacion-cajas contenedor clear">
             <div class="caja">
                 <?php
                     $id_imagen = get_field('imagen_1'); 
