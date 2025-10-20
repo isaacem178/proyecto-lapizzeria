@@ -47,11 +47,21 @@ $imagen = wp_get_attachment_image_src($imagen, 'full');
                 </header>
                 <div class="contenido-entrada">
                     <?php the_excerpt(); ?>  
-                    <a href="<?php the_permalink(); ?>" class="button rojo">Leer más</a>
+                    <a href="<?php the_permalink(); ?>" class="button">Leer más</a>
                 </div>
 
             </article>
             <?php endwhile; ?>
+
+             <div class="paginacion">
+                <?php  // echo paginate_links(); ?>
+                <div class="anteriores">
+                    <?php next_posts_link('Anteriores'); ?>
+                </div>
+                <div class="siguientes">
+                    <?php previous_posts_link('Siguientes'); ?> 
+                </div>
+            </div>
         </main>
         <?php get_sidebar(); ?>
     </div><!--.contenedor-grid -->

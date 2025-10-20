@@ -616,6 +616,35 @@ ul.lista-comentarios li.comment ul.children li {
     margin-top: 20px;
 }
 
+.paginacion {
+    margin-top: 20px;
+    background-color: #e1e1e1;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* .paginacion a { */
+/*     color: #a61206; */
+/*     text-decoration: none; */
+/* } */
+/**/
+/* .paginacion a:hover { */
+/*    text-decoration: underline;  */
+/* } */
+/**/
+/* .paginacion .current { */
+/*     font-weight: bold; */
+/*     color: #666666; */
+/* } */
+
+.paginacion .siguientes,
+.paginacion .anteriores {
+   float: left; 
+}
+.paginacion .anteriores {
+   margin-right: 20px; 
+}
 /* SIDEBAR */
 
 aside.sidebar {
