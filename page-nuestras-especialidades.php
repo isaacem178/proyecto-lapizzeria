@@ -30,7 +30,7 @@ get_header(); ?>
                     <?php
                     $args = array(
                         'post_type' => 'especialidades',
-                        'post_per_page' => -1,
+                        'posts_per_page' => -1,
                         'orderby' => 'title',
                         'order' => 'ASC',
                         'category_name' => 'pizzas'
@@ -42,9 +42,9 @@ get_header(); ?>
                     <div class="columnas2-4">
                         <?php the_post_thumbnail('especialidades'); ?> 
                         <div class="texto-especialidad">
-                            <h4><?php the_title(); ?> <span>$ <?php the_field('precio'); ?></span></h4>  
+                            <h4><?php the_title(); ?> <span>$ <?php the_field('precio'); ?></span></h4>
                             <?php the_content(); ?>
-                        </div> <!-- .texto-especialidad -->
+                        </div> <!-- .texto-especialidades -->
                     </div>
                     <?php endwhile; wp_reset_postdata(); ?>
                 </div><!--.contenedor-grid -->
