@@ -1,6 +1,10 @@
 <?php 
 
+// Tablas personalizadas y otras funciones.
 require get_template_directory() . '/inc/database.php';
+
+// Funciones para las reservaciones.
+require get_template_directory() . '/inc/reservaciones.php';
 
 function lapizzeria_setup(){
     add_theme_support('post-thumbnails');
