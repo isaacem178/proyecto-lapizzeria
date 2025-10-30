@@ -6,6 +6,9 @@ require get_template_directory() . '/inc/database.php';
 // Funciones para las reservaciones.
 require get_template_directory() . '/inc/reservaciones.php';
 
+// Crear opciones para el template
+require get_template_directory() . '/inc/opciones.php';
+
 function lapizzeria_setup(){
     add_theme_support('post-thumbnails');
     add_image_size('nosotros', 437, 291, true);

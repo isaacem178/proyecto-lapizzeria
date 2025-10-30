@@ -32,8 +32,8 @@
                         ?>
                     </div> <!-- .redes-sociales -->
                     <div class="direccion">
-                        <p>8179 Bay Avenue Mountain View, CA 94043</p>
-                        <p>Teléfono: +1-92-456-7890</p>
+                        <p><?php echo esc_html( get_option('lapizzeria_direccion') );?></p>
+                        <p>Teléfono:<?php echo esc_html( get_option('lapizzeria_telefono') );?></p>
                     </div>
 
                 </div>
