@@ -64,6 +64,10 @@ div.comentarios form input[type="submit"]{
     background-color: #a61206;
 }
 
+.rojo {
+   color: #a61206; 
+}
+
 .button.naranja {
     background-color: #f19f30;
 }
@@ -848,4 +852,65 @@ form.reserva-contacto input[type="submit"] {
     .home .texto-hero {
         max-width: 680px;
     }
+}
+
+div.contenido-especialidad {
+    position: relative; 
+    overflow: hidden;
+    display: table;
+}
+
+div.informacion-platillo {
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    background-color: rgba(241, 149, 48, .75);
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+div.informacion-platillo .precio {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+div.informacion-platillo h3 {
+    font-size: 30px;    
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+div.informacion-platillo p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+/* max-width:767px es hacia arriba y min-width:767px es hacia abajo */
+@media only screen and (max-width:767px){
+    div.contenido-especialidad {
+        overflow: visible;
+        display: block;
+        margin-bottom: 30px;
+    } 
+    div.contenido-especialidad img{
+        width: 100%;
+    }
+
+    div.informacion-platillo {
+        position: relative;
+        opacity:1;
+        background-color: #f19f30;
+        padding: 30px;
+    }
+}
+
+div.contenido-especialidad:hover  div.informacion-platillo {
+    top:0; 
+    opacity: 1;
 }
