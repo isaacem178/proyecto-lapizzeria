@@ -22,8 +22,7 @@
     <div class="principal contenedor">
         <main class="contenedor-grid">
             <h2 class="rojo texto-centrado">Nuestras Especialidades</h2>
-            <?php 
-            $args = array(
+            <?php $args = array(
                 'posts_per_page' => 3,
                 'orderby' => 'rand',
                 'post_type'=> 'especialidades',
@@ -36,16 +35,33 @@
                 <div class="contenido-especialidad">
                     <?php the_post_thumbnail('especialidades_portrait'); ?> 
                     <div class="informacion-platillo">
-                        <h3> <?php the_title(); ?> </h3>
+                        <?php the_title('<h3>', '</h3>'); ?> 
                         <?php the_content(); ?>
                         <p class="precio">$<?php the_field('precio')?> </p>
                         <a class="button" href="<?php the_permalink(); ?>">Leer más</a>
                     </div>
                 </div>
             </div>
-            <?php endwhile; wp_reset_post_data(); ?>
+            <?php endwhile; wp_reset_postdata(); ?>
         </main>
     </div>
+
+    <section class="ingredientes">
+        <div class="contenedor">
+            <div class="contenedor-grid">
+                <?php while(have_posts()): the_post(); ?>
+                <div class="columnas2-4 btn">
+                    <?php the_field('contenido'); ?> 
+                    <?php $url = get_page_by_title('Sobre Nosotros'); ?>
+                    <a class="button" href="<?php echo get_permalink($url->ID); ?>">Leer más</a>
+                </div>
+                <div class="columnas2-4 imagen">
+                    <img src="<?php the_field('imagen'); ?>">
+                </div>
+            <?php endwhile; ?>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>
 

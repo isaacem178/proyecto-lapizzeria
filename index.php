@@ -67,5 +67,6 @@ $imagen = wp_get_attachment_image_src($imagen, 'full');
     </div><!--.contenedor-grid -->
 </div><!-- .principal -->
 
+
 <?php get_footer(); ?>
 

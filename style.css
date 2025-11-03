@@ -892,13 +892,14 @@ div.informacion-platillo p {
 }
 
 /* max-width:767px es hacia arriba y min-width:767px es hacia abajo */
-@media only screen and (max-width:767px){
+@media only screen and (max-width: 767px){
     div.contenido-especialidad {
         overflow: visible;
         display: block;
         margin-bottom: 30px;
     } 
-    div.contenido-especialidad img{
+
+    div.contenido-especialidad img {
         width: 100%;
     }
 
@@ -910,7 +911,39 @@ div.informacion-platillo p {
     }
 }
 
-div.contenido-especialidad:hover  div.informacion-platillo {
+div.contenido-especialidad:hover div.informacion-platillo {
     top:0; 
     opacity: 1;
+}
+
+/* INGREDIENTES */
+
+section.ingredientes {
+   background-image: url(img/bg-ingredientes.jpg); 
+    margin-top: 50px;
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+section.ingredientes h3 {
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 700;
+}
+section.ingredientes p {
+   line-height: 40px; 
+    font-size: 19px;
+}
+section.ingredientes div.imagen {
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.ingredientes div.imagen img {
+   width: 80%; 
+}
+
+section.ingredientes div.btn {
+    text-align: center;
 }
