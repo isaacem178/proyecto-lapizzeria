@@ -72,13 +72,17 @@
     <section class="ubicacion-reservacion">
         <div class="contenedor-grid">
             <div class="columnas2-4">
-            mapa aquí
+                <div id="mapa">
+                
+                </div>
             </div>
             <div class="columnas2-4">
                 <?php get_template_part('templates/formulario', 'reservacion'); ?>
             </div>
         </div>
     </section>
+
+
 
 <?php get_footer(); ?>
 

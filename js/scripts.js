@@ -1,3 +1,13 @@
+    let map;
+    async function initMap() {
+        const { Map } = await google.maps.importLibrary("maps");
+        map = new Map(document.getElementById("mapa"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+        });
+    }
+    initMap();
+
 let $ = jQuery.noConflict();
 
 // Ocultar y mostrar menú
@@ -23,7 +33,26 @@ $(document).ready(function(){
     
     ajustarCajas();
 
-    // Fluidbox
+        // Ajustar Mapa
+        let mapa = $('#mapa'); 
+
+        if(mapa.length > 0){
+            if($(document).width() >= breakpoint){
+                ajustarMapa(0);
+            }else {
+                ajustarMapa(300);
+            }
+        }
+
+        $(window).resize(function(){
+            if($(document).width() >= breakpoint){
+                ajustarMapa(0);
+            }else {
+                ajustarMapa(300);
+            }
+        });
+
+        // Fluidbox
    jQuery('.gallery a').each(function(){
         jQuery(this).attr({'data-fluidbox' : ''});
     });
@@ -44,3 +73,14 @@ function ajustarCajas(){
         });
     }
 }
+
+    function ajustarMapa(altura){
+        if(altura == 0 ){
+            let ubicacionSection = $('.ubicacion-reservacion');
+            let ubicacionAltura = ubicacionSection.height();
+            $('#mapa').css({'height': ubicacionAltura});
+
+        }else {
+            $('#mapa').css({'height': altura});
+        }
+    }

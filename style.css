@@ -996,3 +996,7 @@ input[type="datetime-local"] {
     width: auto;
     background-color: #a61206;
 }
+
+#mapa {
+    height: 500px;
+}
