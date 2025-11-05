@@ -1,9 +1,19 @@
     let map;
     async function initMap() {
+        let latlng = {
+            lat: 10.155,
+            lng: -67.958
+        }
         const { Map } = await google.maps.importLibrary("maps");
         map = new Map(document.getElementById("mapa"), {
-            center: { lat: -34.397, lng: 150.644 },
-            zoom: 8,
+            center: latlng, 
+            zoom: 18,
+        });
+
+        let marker = new google.maps.Marker({
+            position:latlng,
+            map: map,
+            title: 'La Pizzeria'
         });
     }
     initMap();
