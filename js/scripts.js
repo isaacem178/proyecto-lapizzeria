@@ -1,13 +1,13 @@
     let map;
     async function initMap() {
         let latlng = {
-            lat: 10.155,
-            lng: -67.958
+            lat: parseFloat(opciones.latitud),
+            lng: parseFloat(opciones.longitud)
         }
         const { Map } = await google.maps.importLibrary("maps");
         map = new Map(document.getElementById("mapa"), {
             center: latlng, 
-            zoom: 18,
+            zoom: parseInt(opciones.zoom),
         });
 
         let marker = new google.maps.Marker({
@@ -22,6 +22,8 @@ let $ = jQuery.noConflict();
 
 // Ocultar y mostrar menú
 $(document).ready(function(){
+
+
     $('.mobile-menu a').on('click', function(){
         $('nav.menu-sitio').toggle('slow');
     });

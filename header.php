@@ -2,7 +2,17 @@
 <html lang="">
  <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Agregando compatibilidad con IOS-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="La Pizzeria">
+        <link rel="icon-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.jpg">
+
+        <!-- Soporte para Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="a61206">
+        <meta name="application-name" content="La Pizzeria">
+        <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/icono.png" sizes="192x192">
    <title>La Pizzeria</title>
 	  <?php wp_head(); ?>
  </head>
